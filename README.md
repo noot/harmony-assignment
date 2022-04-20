@@ -1,15 +1,35 @@
-# Basic Sample Hardhat Project
+# Harmony Assignment
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This repo contains two contracts `NumberStorer.sol` and `Ballot.sol` which implement the functionality described [here](https://harmonyone.notion.site/Background-Assignment-a0d3855f9b9d4728a58b481c30ecfd3f).
 
-Try running some of the following tasks:
+There is also a test for `Ballot.sol` that tests the revert functionality described in the above document.
 
-```shell
-npx hardhat accounts
+## Requirements
+
+node.js v16+
+
+Hardhat: `npm i -g hardhat`
+
+ganache-cli: `npm i -g ganache-cli`
+
+## Instructions
+
+To build:
+```bash
 npx hardhat compile
-npx hardhat clean
+```
+
+To run unit tests:
+```bash
+ganache-cli
 npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+# Compiled 1 Solidity file successfully
+
+
+#   Ballot
+#     ✔ Should deploy and vote (751ms)
+#     ✔ Should revert after voting period ends (102ms)
+
+
+#   2 passing (856ms)
 ```
