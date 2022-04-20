@@ -7,8 +7,6 @@ contract NumberStorer {
 
 	event StoredNumber(uint256 num);
 
-	constructor() {}
-
 	// storeNumber stores the given number in the contract.
 	// It also emits a `StoredNumber` event.
 	function storeNumber(uint256 _num) public {
